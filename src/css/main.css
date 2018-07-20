@@ -98,32 +98,32 @@ textarea {
 
 #firstBox{
     background-color: #255762;
-    width: 23.5vw;
-    height:24.25vh;
-    position: absolute;
+    width: 24vw;
+    height:25vh;
+    position: fixed;
     right: 0px;
 }
 #secondBox{
     background-color: #337887;
-    width: 23.5vw;
-    height:24.25vh;
-    position: absolute;
+    width: 24vw;
+    height:25vh;
+    position: fixed;
     top: 25vh;
     right: 0px;
 }
 #thirdBox{
     background-color: #419aab;
-    width: 23.5vw;
-    height:24.25vh;
-    position: absolute;
+    width: 24vw;
+    height:25vh;
+    position: fixed;
     top: 50vh;
     right: 0px;
 }
 #fourthBox{
     background-color: #5eb1c2;
-    width: 23.5vw;
+    width: 24vw;
     height:25vh;
-    position: absolute;
+    position: fixed;
     top: 75vh;
     right: 0px;
 }
@@ -139,10 +139,9 @@ textarea {
     opacity: 0.4;
 }
 .fullsize{
-    height: 100vh;
-    background-color: #328cc1;
-    width: 100vw;
-    margin-left: -11.25px;
+    background-color: #53a8ba;
+    border-top: solid red 2px;
+    min-height: 100vh;
 
 }
 .menuButtons{
@@ -195,6 +194,53 @@ h3{
 }
 
 
+
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+ #firstBox,#secondBox,#thirdBox,#fourthBox{
+     width: 35vw;
+ }
+    #filterImg, #coverimg, #cover, #infoCover{
+        width: 65vw;
+    }
+    .container{
+        margin-left: 2vw!important;
+        width: 75vw!important;
+    }
+    .contentBackground{
+        background-color: #53a8ba;
+        position: absolute;
+        left:0px;
+        width: 65vw;
+
+    }
+}
+@media only screen and (min-width: 992px) {
+
+    .container{
+        margin-left: 5vw!important;
+        width: 80vw!important;
+    }
+    .contentBackground{
+        background-color: #53a8ba;
+        position: absolute;
+        left:0px;
+        width: 75vw;
+
+    }
+    #about{
+        padding-top: 25vh;
+    }
+}
 
 
 
