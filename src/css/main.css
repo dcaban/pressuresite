@@ -128,19 +128,66 @@ textarea {
     right: 0px;
 }
 
+
+
+/*Making overlays to make sure scroll spy is working consistantly*/
+#secondFake{
+    top: 25vh;
+}
+#thirdFake{
+    top: 50vh;
+}
+#fourthFake{
+    top: 75vh;
+}
+
+#firstFake, #secondFake, #thirdFake, #fourthFake{
+    position: fixed;
+    width: 24vw;
+    height:25vh;
+    position: fixed;
+    right: 0px;
+    opacity: 0;
+}
+
+#homeImg{
+    height: 60px;
+    position: fixed;
+    top: 4px;
+    right: 6vw;
+    z-index: 4;
+}
+#fakeHome{
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    z-index: 5;
+}
+
+.parallax-container {
+    height: 100vh!important;
+    width: 75vw!important;
+}
+
 #filterImg, #coverimg{
     position: absolute;
     height: 100vh;
     width: 75vw;
     object-fit: cover;
+    z-index: 3;
 }
 #coverimg{
     background-color: #994a3a;
     opacity: 0.4;
+    position: absolute;
+    top: 0;
 }
 .fullsize{
-    background-color: #53a8ba;
-    border-top: solid red 2px;
+    background-color: transparent;
+    /*border-top: solid red 2px;*/
     min-height: 100vh;
 
 }
@@ -192,57 +239,63 @@ h3{
     margin-left:50%;
 
 }
+.down:hover {
+    border-color:  #337887;
+}
 
 
-
+html
+{background-image: url("../img/real_cf.png")  }
 .dot {
-    height: 100px;
-    width: 100px;
+    height: 165px;
+    width:  165px;
     background-color: white;
     border-radius: 50%;
     margin: auto;
 }
-
+.dotTitle {
+    margin-bottom: 20px;
+}
 
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
  #firstBox,#secondBox,#thirdBox,#fourthBox{
      width: 35vw;
  }
-    #filterImg, #coverimg, #cover, #infoCover{
-        width: 65vw;
+    #filterImg, #coverimg, #cover, #infoCover, .parallax-container{
+        width: 65vw !important;
     }
     .container{
-        margin-left: 2vw!important;
-        width: 75vw!important;
+        margin-left:4vw!important;
+        width: 71vw!important;
     }
     .contentBackground{
-        background-color: #53a8ba;
-        position: absolute;
         left:0px;
         width: 65vw;
 
     }
+
 }
 @media only screen and (min-width: 992px) {
 
     .container{
-        margin-left: 5vw!important;
-        width: 80vw!important;
+        margin-left: 4vw!important;
+        min-width: 80vw!important;
     }
     .contentBackground{
-        background-color: #53a8ba;
-        position: absolute;
         left:0px;
         width: 75vw;
 
     }
     #about{
-        padding-top: 25vh;
+        padding-top: 8vh;
     }
 }
 
-
+.icon{
+    height: 124px;
+    margin-top: 10px;
+}
 
 /* ==========================================================================
    Helper classes
