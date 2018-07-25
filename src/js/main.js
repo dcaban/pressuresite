@@ -3,6 +3,8 @@
 //
 //     console.log("hey buddy");
 // });
+
+
 $(document).ready(function(){
     $('.parallax').parallax();
 });
@@ -14,3 +16,7 @@ $(document).ready(function(){
         scrollOffset: 0
     });
 });
+
+
+
+

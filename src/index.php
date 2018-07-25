@@ -16,8 +16,11 @@
 <body>
 
 
+
+
+
 <div id="cover">
-    <a href="#coverimg"><img id="homeImg" src="./img/PERFOMANCE%20DRAFT.png" alt=""></a>
+    <a href="#coverimg"><img id="homeImg" src="./img/home.svg" alt=""></a>
     <a id="firstBox" class="white-text" href="#about"><h3 class="menuButtons center-align">Our Values</h3></a>
 
     <a id="secondBox"class="white-text" href="#certifications"><h3 class="menuButtons center-align">Our Services</h3></a>
@@ -111,7 +114,7 @@
                                 <label for="name">First Name</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="last_name" name="lastName" type="text" class="validate">
+                                <input id="last_name" name="last_name" type="text" class="validate">
                                 <label for="last_name">Last Name</label>
                             </div>
                         </div>
@@ -124,7 +127,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <textarea name="message" id="message" class="materialize-textarea"></textarea>
-                                <label for="message">Details about your kitchen you love</label>
+                                <label for="message">Details about your kitchen</label>
                             </div>
                         </div>
 
@@ -158,21 +161,18 @@
 
 
 <!--JavaScript at end of body for optimized loading-->
-<script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!--<script>-->
+<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
+<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')-->
+<!--</script>-->
+<!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
 </body>
 
 </html>

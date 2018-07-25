@@ -150,19 +150,19 @@ textarea {
 }
 
 #homeImg{
-    height: 60px;
+    height: 30px;
     position: fixed;
-    top: 4px;
-    right: 6vw;
+    top: 8px;
+    right: 20px;
     z-index: 4;
 }
 #fakeHome{
     background-color: transparent;
-    height: 60px;
-    width: 200px;
+    height: 40px;
+    width: 24vw;
     position: fixed;
-    top: 4px;
-    right: 6vw;
+    top: 8px;
+    right: 10px;
     z-index: 5;
 }
 
@@ -258,6 +258,24 @@ html
 
 .quoteForm{
     padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    #firstBox,#secondBox,#thirdBox,#fourthBox,#fakeHome,#firstFake,#secondFake,#thirdFake,#fourthFake{
+       display: none;
+    }
+    #filterImg, #coverimg, #cover, #infoCover, .parallax-container{
+        width: 100vw !important;
+    }
+    .container{
+        width: 90vw!important;
+    }
+    .contentBackground{
+        left:0px;
+        width: 65vw;
+
+    }
+
 }
 
 
@@ -474,3 +492,6 @@ html
 body {
     margin: 0px;
 }
+
+/*Sidebar*/
+
