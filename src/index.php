@@ -20,7 +20,10 @@
 
 
 <div id="cover">
+    <a href="#coverimg"><img id="menuImg" src="./img/menu.svg" alt=""></a>
     <a href="#coverimg"><img id="homeImg" src="./img/home.svg" alt=""></a>
+    <img id="close" src="./img/close.svg" alt="">
+
     <a id="firstBox" class="white-text" href="#about"><h3 class="menuButtons center-align">Our Values</h3></a>
 
     <a id="secondBox"class="white-text" href="#certifications"><h3 class="menuButtons center-align">Our Services</h3></a>

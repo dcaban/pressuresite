@@ -89,11 +89,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#cover {
-    background-color: whitesmoke;
-    width: 100vw;
-    height: 100vh;
-}
+/*#cover {*/
+    /*background-color: whitesmoke;*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+/*}*/
 
 #firstBox{
     background-color: #255762;
@@ -259,9 +259,16 @@ html
 .quoteForm{
     padding: 30px;
 }
+#menuImg{
+    display: none;
+}
+#close{
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
-    #firstBox,#secondBox,#thirdBox,#fourthBox,#fakeHome,#firstFake,#secondFake,#thirdFake,#fourthFake{
+    #firstBox,#secondBox,#thirdBox,#fourthBox,#fakeHome,#firstFake,#secondFake,#thirdFake,#fourthFake,#close{
        display: none;
     }
     #filterImg, #coverimg, #cover, #infoCover, .parallax-container{
@@ -273,13 +280,43 @@ html
     .contentBackground{
         left:0px;
         width: 65vw;
+    }
+    #menuImg{
+        display: block;
+        height: 30px;
+        position: fixed;
+        top: 8px;
+        right: 20px;
+        z-index: 4;
+    }
 
+    .openSide{
+        display: block!important;
+        width: 100vw!important;
+        z-index: 9;
+    }
+    #homeImg,#fakeHome{
+        width: 40px!important;
+        left:1px;
+        display: none;
+        z-index: 12;
+    }
+
+    #close{
+        width: 20px!important;
+        position: fixed;
+        top: 8px;
+        right: 20px;
+        z-index: 13;
+        display: none;
+        cursor: pointer;
     }
 
 }
 
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+
  #firstBox,#secondBox,#thirdBox,#fourthBox{
      width: 35vw;
  }

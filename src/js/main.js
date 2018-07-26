@@ -17,6 +17,15 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#menuImg").click(function(){
+        $("#firstBox,#secondBox,#thirdBox,#fourthBox,#fakeHome,#firstFake,#secondFake,#thirdFake,#fourthFake,#homeImg,#close,#fakeHome,#closeFake").addClass("openSide");
+    });
+
+    $("#firstBox,#secondBox,#thirdBox,#fourthBox,#fakeHome,#firstFake,#secondFake,#thirdFake,#fourthFake,#homeImg,#close,#fakeHome,#closeFake").click(function(){
+        $("#firstBox,#secondBox,#thirdBox,#fourthBox,#fakeHome,#firstFake,#secondFake,#thirdFake,#fourthFake,#homeImg,#close,#fakeHome,#closeFake").removeClass("openSide");
+    });
+});
 
 
 
