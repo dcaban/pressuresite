@@ -23,10 +23,11 @@
     <a href="#coverimg"><img id="menuImg" src="./img/menu.svg" alt=""></a>
     <a href="#coverimg"><img id="homeImg" src="./img/home.svg" alt=""></a>
     <img id="close" src="./img/close.svg" alt="">
+    <div id="fakeClose"></div>
 
-    <a id="firstBox" class="white-text" href="#about"><h3 class="menuButtons center-align">Our Values</h3></a>
+    <a id="firstBox" class="white-text" href="#about"><h3 class="menuButtons center-align">Values</h3></a>
 
-    <a id="secondBox"class="white-text" href="#certifications"><h3 class="menuButtons center-align">Our Services</h3></a>
+    <a id="secondBox"class="white-text" href="#certifications"><h3 class="menuButtons center-align">Services</h3></a>
     <a id="thirdBox" class="white-text" href="#quote"><h3 class="menuButtons center-align">Get a Quote</h3></a>
     <a id="fourthBox" class="white-text" href="#contact"><h3 class="menuButtons center-align">Contact</h3></a>
 
@@ -57,46 +58,32 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s12 m9 l10">
+        <span class="col s12 m9 l10">
 
             <div id="about" class="section scrollspy fullsize">
                 <div class="row">
-                    <div class="dotTitle col s12 center-align white-text"><h1>Our Values</h1></div>
+                    <div class="dotTitle col s12 center-align white-text"><h1>Our Values</h1><p>We are here to make maintenance as simple and easy as possible</p></div>
                     <div class="white-text col l3 m12 center-align">
 
 
                         <div class="dot"><img class="icon" src="./img/reliability.svg" alt=""></div>
-                        <h5>Trustworthiness</h5>
-                        <p>Lorem ipsum dolor amet church-key taiyaki skateboard,
-                            vinyl umami semiotics tote bag ennui tilde cardigan you probably haven't heard of them.
-                            Tote bag normcore kogi freegan, vexillologist chartreuse gastropub actually seitan edison
-                            bulb distillery everyday carry church-key farm-to-table tattooed. Hot chicken polaroid live-edge,
-                            sustainable jean shorts mixtape ugh. Tousled freegan fingerstache,
-                            asymmetrical poutine occupy hot chicken. Truffaut letterpress pork belly YOLO.</p>
+                        <h5>Simplicity</h5>
+                        <p>We work hard to make your experience simple. We take on the stress of keeping up with regular maintenance, to keep your kitchen in compliance so, you can spend more time focusing on what matters.</p>
                     </div>
                     <div class="white-text col l3 m12 center-align">
                         <div class="dot"><img class="icon" src="./img/shipped.svg" alt=""></div>
                         <h5>Dependability</h5>
-                        <p>Pork belly pok pok roof party, literally banjo keffiyeh fixie gochujang squid.
-                            You probably haven't heard of them banjo retro flannel knausgaard microdosing aesthetic.
-                            Vaporware try-hard freegan cold-pressed adaptogen viral.
-                            Hoodie fam poke literally vexillologist bitters.</p>
+                        <p>We believe the job is not done until everything is done. We strive to be as detail oriented as you are in your kitchen. We ensure to leave the area better condition than when we came.</p>
                     </div>
                     <div class="white-text col l3 m12 center-align">
                         <div class="dot"><img class="icon" src="./img/stopwatch.svg" alt=""></div>
                         <h5>Punctuality</h5>
-                        <p>Tote bag prism vegan crucifix humblebrag. Tilde blue bottle chillwave forage occupy, ramps bushwick waistcoat mixtape kickstarter.
-                            Tilde ugh tattooed 3 wolf moon vexillologist hashtag, locavore art party poutine raw denim sriracha cardigan edison bulb whatever.
-                            Fuck Kinfolk four dollar toast hexagon drinking vinegar neutra, freegan prism photo booth tousled quinoa cred meditation.
-                            Distillery artisan pinterest meditation literally bespoke, VHS man braid photo booth af before they sold out hoodie.</p>
+                        <p>Your time is important, we know that. Because your time is important, we will do everything to respect your time. We relentlessly strive to be on time and to not waste yours.</p>
                     </div>
                     <div class="white-text col l3 m12 center-align">
                         <div class="dot"><img class="icon" src="./img/fire-alarm.svg" alt=""></div>
                         <h5>Compliance</h5>
-                        <p>Leggings 8-bit squid selvage artisan kogi, bushwick venmo chicharrones locavore prism next level taiyaki.
-                            Selfies etsy hell of, cornhole marfa fanny pack godard pickled schlitz copper mug. Selfies pop-up vegan knausgaard,
-                            ugh la croix authentic kogi yuccie organic locavore williamsburg.
-                            PBR&B occupy skateboard bushwick.</p>
+                        <p>Local regulations require regular routine maintenance on hood exhausts. We are Phil Ackland Certified to ensure compliance. Performance Hood Cleaning makes rescheduling appointments easy.</p>
                     </div>
 
                 </div>
@@ -105,10 +92,19 @@
 
 
             <div id="certifications" class="section scrollspy fullsize">
-                <h1></h1>
+                <div class="row">
+                <h1 class="white-text center-align">Our Services</h1>
+                <h3 class="center-align col s12 white-text">Commercial Patio Cleaning</h3>
+                <h3 class="center-align col s12 white-text">Kitchen Exhaust Cleaning</h3>
+                <h3 class="center-align col s12 white-text">Gas Station Canopy Cleaning</h3>
+                <h3 class="center-align col s12 white-text">Commercial Exterior Cleaning</h3>
+                <h3 class="center-align col s12 white-text">Sidewalks Pressure Washing</h3>
+                <h3 class="center-align col s12 white-text">Parking Lot Cleaning</h3>
+                <h3 class="center-align col s12 white-text">Roof Pressure Washing</h3>
+                </div>
             </div>
             <div id="quote" class="section scrollspy fullsize">
-                <h1 class="white-text">Get a Quote</h1>
+                <h1 class="center-align white-text">Get a Quote</h1>
                 <div class="contact-form row card quoteForm">
                     <form class="col s12" action="contactFormHandler.php" method="post">
                         <div class="row">
@@ -128,11 +124,32 @@
                             </div>
                         </div>
                         <div class="row">
+                            <div class="input-field col s6">
+                                <input  id="city" name="city" type="text" class="validate">
+                                <label for="city">City</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="state" name="state" type="text" class="validate">
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="phone" name="phone" type="text" class="validate">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input  id="company" name="company" type="text" class="validate">
+                                <label for="company">Company Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="input-field col s12">
                                 <textarea name="message" id="message" class="materialize-textarea"></textarea>
                                 <label for="message">Details about your kitchen</label>
                             </div>
                         </div>
+
 
                         <div class="center-align">
                             <button type="submit" name="submit" class="btn white-text waves-effect">Submit</button>
@@ -150,7 +167,14 @@
 
 
             <div id="contact" class="section scrollspy fullsize">
-                <p>Content </p>
+                <h4 class="white-text">Contact Us</h4>
+
+                <h6>Phone:</h6>
+                <h6 class="amber-text">(863)409-8375</h6>
+                <h6>Email:</h6>
+                    <h6 class="amber-text">forcleanhoods@gmail.com</h6>
+
+
             </div>
         </div>
     </div>

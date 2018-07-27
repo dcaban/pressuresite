@@ -149,11 +149,14 @@ textarea {
     opacity: 0;
 }
 
+#fakeClose{
+display: none;
+}
 #homeImg{
     height: 30px;
     position: fixed;
     top: 8px;
-    right: 20px;
+    left: 20px;
     z-index: 4;
 }
 #fakeHome{
@@ -180,7 +183,7 @@ textarea {
 }
 #coverimg{
     background-color: #994a3a;
-    opacity: 0.4;
+    opacity: 0.3;
     position: absolute;
     top: 0;
 }
@@ -226,7 +229,7 @@ h3{
 
 .down {
     position: absolute;
-    top:40vh;
+    top:35vh;
     width: 30px;
     height: 30px;
     border: solid white;
@@ -275,7 +278,7 @@ html
         width: 100vw !important;
     }
     .container{
-        width: 90vw!important;
+        width: 80vw!important;
     }
     .contentBackground{
         left:0px;
@@ -286,7 +289,7 @@ html
         height: 30px;
         position: fixed;
         top: 8px;
-        right: 20px;
+        left: 20px;
         z-index: 4;
     }
 
@@ -311,6 +314,15 @@ html
         display: none;
         cursor: pointer;
     }
+    #fakeClose{
+        height: 30px;
+        width: 40px!important;
+        position: fixed;
+        top: 8px;
+        right: 20px;
+        background-color: transparent;
+        z-index: 10;
+    }
 
 }
 
@@ -321,7 +333,7 @@ html
      width: 35vw;
  }
     #filterImg, #coverimg, #cover, #infoCover, .parallax-container{
-        width: 63vw !important;
+        width: 63.5vw !important;
     }
     .container{
         margin-left:4vw!important;
